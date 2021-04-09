@@ -7,21 +7,21 @@
 a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #333;
+  color: #fff;
 }
 
 a:hover {
   font-size: 1.3rem;
-  color: #000;
+  color: rgb(230, 230, 230);
+  transition: all ease-out 0.2s;
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #9d938a;
+  background-color: #333;
   height: 8vh;
-  border-bottom: black;
 }
 
 .page {
@@ -34,7 +34,9 @@ header {
 }
 
 form,
-.about {
+.about,
+.container,
+.wrapper {
   display: flex;
   flex-direction: column;
   background: rgba(9, 2, 31, 0.2);
@@ -47,8 +49,25 @@ form,
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
 }
 
+.title {
+  margin-left: -38%;
+  color: #333;
+  font-weight: bold;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5%;
+}
+
+.title p {
+  font-size: 1.1rem;
+}
+
 form h1,
-.about h1 {
+.about h1,
+.container h1,
+.wrapper h1 {
   color: #fff;
   text-align: center;
 }
@@ -83,5 +102,38 @@ label {
   color: rgb(9, 2, 31);
   border-color: rgb(9, 2, 31);
   font-size: 0.9rem;
-  transition: all ease-out 0.5s;
+  transition: all ease-out 0.4s;
+}
+
+.btns {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btns input {
+  width: 35%;
+  padding: 2% 0;
+  background: none;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btns input:hover {
+  background-color: #fff;
+  color: rgb(9, 2, 31);
+  border-color: rgb(9, 2, 31);
+  font-size: 1.1rem;
+  transition: all ease-out 0.4s;
+}
+
+.home {
+  background: url("../home-bg.png");
+  height: 92vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5% 30%;
 }

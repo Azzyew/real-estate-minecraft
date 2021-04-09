@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+img {
+  border-radius: 5px;
 }
 
 a {
@@ -25,7 +30,16 @@ header {
 }
 
 .page {
-  background: url("../landscape-bg.jpg");
+  background: url("../img/landscape-bg.jpg");
+  height: auto;
+  width: 99vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 30%;
+}
+
+.page2 {
+  background: url("../img/landscape-bg.jpg");
   height: 92vh;
   width: 100vw;
   background-repeat: no-repeat;
@@ -34,9 +48,7 @@ header {
 }
 
 form,
-.about,
-.container,
-.wrapper {
+.about {
   display: flex;
   flex-direction: column;
   background: rgba(9, 2, 31, 0.2);
@@ -47,6 +59,30 @@ form,
   border-top: 4px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(9, 2, 31, 0.2);
+  margin-left: -6vw;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 20px;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+  color: #fff;
+  width: 40vw;
+  padding-bottom: 4%;
+}
+
+.images img {
+  padding-bottom: 4%;
 }
 
 .title {
@@ -130,10 +166,71 @@ label {
 }
 
 .home {
-  background: url("../home-bg.png");
+  background: url("../img/home-bg.png");
   height: 92vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 5% 30%;
+}
+
+.wrapper {
+  margin-left: -7vw;
+  display: flex;
+  flex-direction: column;
+  background: rgba(9, 2, 31, 0.2);
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.houseCard {
+  margin-top: 5%;
+  display: flex;
+  background: rgba(6, 17, 9, 0.6);
+  width: fit-content;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 19vw;
+  font-size: 1.3rem;
+  padding-left: 5%;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.info input {
+  width: fit-content;
+  padding: 4%;
+  background: none;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.info input:hover {
+  background-color: #fff;
+  color: rgb(6, 17, 9);
+  border-color: rgb(6, 17, 9);
+  font-size: 1.1rem;
+  transition: all ease-out 0.4s;
+}
+
+.aps {
+  padding-top: 4%;
 }
